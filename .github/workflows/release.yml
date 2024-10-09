@@ -47,8 +47,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
         with:
           upload_url: ${{ needs.create_release.outputs.upload_url}}
-          asset_name: Lab_2-0.0.${{ github.run_number }}-Linux.deb
-          asset_path: ./Lab_2-0.0.${{ github.run_number }}-Linux.deb
+          asset_name: lab_3-0.0.${{ github.run_number }}-Linux.deb
+          asset_path: ./lab_3-0.0.${{ github.run_number }}-Linux.deb
           asset_content_type: application/vnd.debian.binary-package
 
   release_assets_macos:
@@ -72,6 +72,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
         with:
           upload_url: ${{ needs.create_release.outputs.upload_url}}
-          asset_name: Lab_2-0.0.${{ github.run_number }}-Darwin.zip
-          asset_path: ./Lab_2-0.0.${{ github.run_number }}-Darwin.zip
+          asset_name: lab_3-0.0.${{ github.run_number }}-Darwin.zip
+          asset_path: ./lab_3-0.0.${{ github.run_number }}-Darwin.zip
           asset_content_type: application/zip
